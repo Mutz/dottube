@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMainForm));
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageYouTube = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBoxVideoInformation = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelShowDuration = new System.Windows.Forms.Label();
+            this.labelDuration = new System.Windows.Forms.Label();
             this.labelVideoDescription = new System.Windows.Forms.Label();
             this.labelShowFileName = new System.Windows.Forms.Label();
             this.labelShowFormatID = new System.Windows.Forms.Label();
@@ -43,12 +43,14 @@
             this.labelShowVideoID = new System.Windows.Forms.Label();
             this.labelFileName = new System.Windows.Forms.Label();
             this.labelFormatID = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelURL = new System.Windows.Forms.Label();
             this.labelVideoTitle = new System.Windows.Forms.Label();
             this.labelVideoID = new System.Windows.Forms.Label();
-            this.labelURL = new System.Windows.Forms.Label();
+            this.labelTextBoxURL = new System.Windows.Forms.Label();
             this.buttonGetInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
             this.tabControlMain.SuspendLayout();
             this.tabPageYouTube.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -70,16 +72,10 @@
             this.tabPageYouTube.Name = "tabPageYouTube";
             this.tabPageYouTube.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.groupBoxVideoInformation);
-            this.groupBox2.Controls.Add(this.labelURL);
+            this.groupBox2.Controls.Add(this.labelTextBoxURL);
             this.groupBox2.Controls.Add(this.buttonGetInfo);
             this.groupBox2.Controls.Add(this.textBox1);
             resources.ApplyResources(this.groupBox2, "groupBox2");
@@ -88,7 +84,9 @@
             // 
             // groupBoxVideoInformation
             // 
-            this.groupBoxVideoInformation.Controls.Add(this.label2);
+            this.groupBoxVideoInformation.Controls.Add(this.richTextBoxDescription);
+            this.groupBoxVideoInformation.Controls.Add(this.labelShowDuration);
+            this.groupBoxVideoInformation.Controls.Add(this.labelDuration);
             this.groupBoxVideoInformation.Controls.Add(this.labelVideoDescription);
             this.groupBoxVideoInformation.Controls.Add(this.labelShowFileName);
             this.groupBoxVideoInformation.Controls.Add(this.labelShowFormatID);
@@ -97,17 +95,22 @@
             this.groupBoxVideoInformation.Controls.Add(this.labelShowVideoID);
             this.groupBoxVideoInformation.Controls.Add(this.labelFileName);
             this.groupBoxVideoInformation.Controls.Add(this.labelFormatID);
-            this.groupBoxVideoInformation.Controls.Add(this.label4);
+            this.groupBoxVideoInformation.Controls.Add(this.labelURL);
             this.groupBoxVideoInformation.Controls.Add(this.labelVideoTitle);
             this.groupBoxVideoInformation.Controls.Add(this.labelVideoID);
             resources.ApplyResources(this.groupBoxVideoInformation, "groupBoxVideoInformation");
             this.groupBoxVideoInformation.Name = "groupBoxVideoInformation";
             this.groupBoxVideoInformation.TabStop = false;
             // 
-            // label2
+            // labelShowDuration
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.labelShowDuration, "labelShowDuration");
+            this.labelShowDuration.Name = "labelShowDuration";
+            // 
+            // labelDuration
+            // 
+            resources.ApplyResources(this.labelDuration, "labelDuration");
+            this.labelDuration.Name = "labelDuration";
             // 
             // labelVideoDescription
             // 
@@ -149,10 +152,10 @@
             resources.ApplyResources(this.labelFormatID, "labelFormatID");
             this.labelFormatID.Name = "labelFormatID";
             // 
-            // label4
+            // labelURL
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.labelURL, "labelURL");
+            this.labelURL.Name = "labelURL";
             // 
             // labelVideoTitle
             // 
@@ -164,21 +167,33 @@
             resources.ApplyResources(this.labelVideoID, "labelVideoID");
             this.labelVideoID.Name = "labelVideoID";
             // 
-            // labelURL
+            // labelTextBoxURL
             // 
-            resources.ApplyResources(this.labelURL, "labelURL");
-            this.labelURL.Name = "labelURL";
+            resources.ApplyResources(this.labelTextBoxURL, "labelTextBoxURL");
+            this.labelTextBoxURL.Name = "labelTextBoxURL";
             // 
             // buttonGetInfo
             // 
             resources.ApplyResources(this.buttonGetInfo, "buttonGetInfo");
             this.buttonGetInfo.Name = "buttonGetInfo";
             this.buttonGetInfo.UseVisualStyleBackColor = true;
+            this.buttonGetInfo.Click += new System.EventHandler(this.buttonGetInfo_Click);
             // 
             // textBox1
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
+            // 
+            // tabPage2
+            // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // richTextBoxDescription
+            // 
+            resources.ApplyResources(this.richTextBoxDescription, "richTextBoxDescription");
+            this.richTextBoxDescription.Name = "richTextBoxDescription";
             // 
             // formMainForm
             // 
@@ -203,7 +218,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBoxVideoInformation;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelVideoDescription;
         private System.Windows.Forms.Label labelShowFileName;
         private System.Windows.Forms.Label labelShowFormatID;
@@ -212,12 +226,15 @@
         private System.Windows.Forms.Label labelShowVideoID;
         private System.Windows.Forms.Label labelFileName;
         private System.Windows.Forms.Label labelFormatID;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelURL;
         private System.Windows.Forms.Label labelVideoTitle;
         private System.Windows.Forms.Label labelVideoID;
-        private System.Windows.Forms.Label labelURL;
+        private System.Windows.Forms.Label labelTextBoxURL;
         private System.Windows.Forms.Button buttonGetInfo;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelShowDuration;
+        private System.Windows.Forms.Label labelDuration;
+        private System.Windows.Forms.RichTextBox richTextBoxDescription;
     }
 }
 
