@@ -18,12 +18,11 @@ namespace dottube
             {
                 string VideoURL = textBox1.Text;
                 YoutubeVideo Video = new YoutubeVideo(VideoURL);
-                labelShowDuration.Text = Video.Duration.ToString();
-                labelShowFileName.Text = Video.FileName.ToString();
-                labelShowFormatID.Text = Video.Format.ToString();
-                labelShowVideoID.Text = Video.ID.ToString();
-                labelShowVideoTitle.Text = Video.Title.ToString();
-                labelShowVideoURL.Text = Video.URL.ToString();
+                labelShowDuration.Text = Video.duration.ToString();
+                labelShowVideoID.Text = Video.display_id.ToString();
+                labelShowVideoTitle.Text = Video.title.ToString();
+                labelShowVideoURL.Text = Video.url.ToString();
+                richTextBoxDescription.Text = Video.description.ToString();
             }
         }
     }
