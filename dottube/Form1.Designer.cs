@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMainForm));
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageYouTube = new System.Windows.Forms.TabPage();
+            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBoxVideoInformation = new System.Windows.Forms.GroupBox();
             this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
@@ -52,11 +53,14 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.pictureBoxThumbnail = new System.Windows.Forms.PictureBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabControlMain.SuspendLayout();
             this.tabPageYouTube.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBoxVideoInformation.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThumbnail)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -69,23 +73,30 @@
             // 
             // tabPageYouTube
             // 
+            this.tabPageYouTube.Controls.Add(this.propertyGrid1);
             this.tabPageYouTube.Controls.Add(this.groupBox2);
             resources.ApplyResources(this.tabPageYouTube, "tabPageYouTube");
             this.tabPageYouTube.Name = "tabPageYouTube";
             this.tabPageYouTube.UseVisualStyleBackColor = true;
             // 
+            // propertyGrid1
+            // 
+            resources.ApplyResources(this.propertyGrid1, "propertyGrid1");
+            this.propertyGrid1.Name = "propertyGrid1";
+            // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.groupBoxVideoInformation);
             this.groupBox2.Controls.Add(this.labelTextBoxURL);
             this.groupBox2.Controls.Add(this.buttonGetInfo);
             this.groupBox2.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
             // groupBoxVideoInformation
             // 
+            this.groupBoxVideoInformation.Controls.Add(this.pictureBoxThumbnail);
             this.groupBoxVideoInformation.Controls.Add(this.richTextBoxDescription);
             this.groupBoxVideoInformation.Controls.Add(this.labelShowDuration);
             this.groupBoxVideoInformation.Controls.Add(this.labelDuration);
@@ -193,6 +204,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.listBox1);
             this.tabPage2.Controls.Add(this.listView1);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
@@ -203,6 +215,19 @@
             resources.ApplyResources(this.listView1, "listView1");
             this.listView1.Name = "listView1";
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // pictureBoxThumbnail
+            // 
+            resources.ApplyResources(this.pictureBoxThumbnail, "pictureBoxThumbnail");
+            this.pictureBoxThumbnail.Name = "pictureBoxThumbnail";
+            this.pictureBoxThumbnail.TabStop = false;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.listBox1, "listBox1");
+            this.listBox1.Name = "listBox1";
             // 
             // formMainForm
             // 
@@ -212,11 +237,13 @@
             this.Name = "formMainForm";
             this.tabControlMain.ResumeLayout(false);
             this.tabPageYouTube.ResumeLayout(false);
+            this.tabPageYouTube.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBoxVideoInformation.ResumeLayout(false);
             this.groupBoxVideoInformation.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThumbnail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,7 +272,10 @@
         private System.Windows.Forms.Label labelShowDuration;
         private System.Windows.Forms.Label labelDuration;
         private System.Windows.Forms.RichTextBox richTextBoxDescription;
+        private System.Windows.Forms.PropertyGrid propertyGrid1;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.PictureBox pictureBoxThumbnail;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

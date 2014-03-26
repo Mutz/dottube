@@ -9,6 +9,7 @@ namespace dottube
         public string display_id { get; set; }
         public string upload_date { get; set; }
         public string description { get; set; }
+        public string _filename { get; set; }
         public string uploader_id { get; set; }
         public string extractor { get; set; }
         public int height { get; set; }

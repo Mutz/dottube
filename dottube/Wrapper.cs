@@ -10,7 +10,7 @@ namespace dottube
         public static string YoutubeDl(string strParam, string strURL)
         {
             Process youtubedl = new Process();
-            youtubedl.StartInfo.CreateNoWindow = false;         // Do not create a Window
+            youtubedl.StartInfo.CreateNoWindow = true;         // Do not create a Window
             youtubedl.StartInfo.UseShellExecute = false;
             youtubedl.StartInfo.RedirectStandardOutput = true;  // Redirect the StandardOutput
             youtubedl.StartInfo.FileName = "youtube-dl.exe";
@@ -23,5 +23,6 @@ namespace dottube
             log.Debug(strOutput);
             return strOutput;
         }
+
     }
 }

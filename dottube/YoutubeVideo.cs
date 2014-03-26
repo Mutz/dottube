@@ -13,8 +13,6 @@ namespace dottube
         protected override void Init()
         {
             base.Init();
-
-            
         }
     }
 }
