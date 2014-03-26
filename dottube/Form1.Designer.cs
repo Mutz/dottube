@@ -51,11 +51,12 @@
             this.buttonGetInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.tabControlMain.SuspendLayout();
             this.tabPageYouTube.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBoxVideoInformation.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -68,7 +69,6 @@
             // 
             // tabPageYouTube
             // 
-            this.tabPageYouTube.Controls.Add(this.propertyGrid1);
             this.tabPageYouTube.Controls.Add(this.groupBox2);
             resources.ApplyResources(this.tabPageYouTube, "tabPageYouTube");
             this.tabPageYouTube.Name = "tabPageYouTube";
@@ -193,14 +193,16 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.listView1);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // propertyGrid1
+            // listView1
             // 
-            resources.ApplyResources(this.propertyGrid1, "propertyGrid1");
-            this.propertyGrid1.Name = "propertyGrid1";
+            resources.ApplyResources(this.listView1, "listView1");
+            this.listView1.Name = "listView1";
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // formMainForm
             // 
@@ -214,6 +216,7 @@
             this.groupBox2.PerformLayout();
             this.groupBoxVideoInformation.ResumeLayout(false);
             this.groupBoxVideoInformation.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -242,7 +245,7 @@
         private System.Windows.Forms.Label labelShowDuration;
         private System.Windows.Forms.Label labelDuration;
         private System.Windows.Forms.RichTextBox richTextBoxDescription;
-        private System.Windows.Forms.PropertyGrid propertyGrid1;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 

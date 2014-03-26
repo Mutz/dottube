@@ -118,34 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="propertyGrid1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 371</value>
-  </data>
-  <data name="propertyGrid1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 290</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="propertyGrid1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;propertyGrid1.Name" xml:space="preserve">
-    <value>propertyGrid1</value>
-  </data>
-  <data name="&gt;&gt;propertyGrid1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PropertyGrid, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;propertyGrid1.Parent" xml:space="preserve">
-    <value>tabPageYouTube</value>
-  </data>
-  <data name="&gt;&gt;propertyGrid1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="richTextBoxDescription.Location" type="System.Drawing.Point, System.Drawing">
     <value>71, 109</value>
   </data>
   <data name="richTextBoxDescription.Size" type="System.Drawing.Size, System.Drawing">
     <value>534, 180</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="richTextBoxDescription.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
@@ -640,7 +619,7 @@
     <value>tabPageYouTube</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="tabPageYouTube.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -649,7 +628,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageYouTube.Size" type="System.Drawing.Size, System.Drawing">
-    <value>665, 669</value>
+    <value>665, 542</value>
   </data>
   <data name="tabPageYouTube.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -669,6 +648,27 @@
   <data name="&gt;&gt;tabPageYouTube.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
+  </data>
+  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 527</value>
+  </data>
+  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
+    <value>listView1</value>
+  </data>
+  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -676,7 +676,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>661, 655</value>
+    <value>665, 542</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -703,7 +703,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControlMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>673, 695</value>
+    <value>673, 568</value>
   </data>
   <data name="tabControlMain.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -727,7 +727,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>673, 695</value>
+    <value>673, 568</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>dotTube</value>
