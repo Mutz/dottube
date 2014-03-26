@@ -10,14 +10,11 @@ namespace dottube
 {
     class YoutubeVideo : Video
     {
-        public string VideoURL {get; set;}
-
-        public YoutubeVideo(string strUrl)
+        protected override void Init()
         {
-            this.VideoURL = strUrl;
-            JsonConvert.DeserializeObject<YoutubeVideo>(Wrapper.YoutubeDl("--dump-json ", this.VideoURL));
-        }
+            base.Init();
 
-        
+            
+        }
     }
 }

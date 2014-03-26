@@ -38,6 +38,18 @@ namespace dottube
         public string thumbnail { get; set; }
         public string webpage_url_basename { get; set; }
 
+        public static T GetInstance<T>(string url) where T : Video
+        {
+            var instance = JsonConvert.DeserializeObject<T>(Wrapper.YoutubeDl("--dump-json ", url));
+            instance.Init();
+            return instance;
+        }
+
+        protected virtual void Init()
+        {
+        }
+
+
         public class Format
         {
             public string format { get; set; }

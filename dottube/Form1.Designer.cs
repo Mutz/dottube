@@ -33,6 +33,7 @@
             this.tabPageYouTube = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBoxVideoInformation = new System.Windows.Forms.GroupBox();
+            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
             this.labelShowDuration = new System.Windows.Forms.Label();
             this.labelDuration = new System.Windows.Forms.Label();
             this.labelVideoDescription = new System.Windows.Forms.Label();
@@ -50,7 +51,7 @@
             this.buttonGetInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
+            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.tabControlMain.SuspendLayout();
             this.tabPageYouTube.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -67,6 +68,7 @@
             // 
             // tabPageYouTube
             // 
+            this.tabPageYouTube.Controls.Add(this.propertyGrid1);
             this.tabPageYouTube.Controls.Add(this.groupBox2);
             resources.ApplyResources(this.tabPageYouTube, "tabPageYouTube");
             this.tabPageYouTube.Name = "tabPageYouTube";
@@ -101,6 +103,11 @@
             resources.ApplyResources(this.groupBoxVideoInformation, "groupBoxVideoInformation");
             this.groupBoxVideoInformation.Name = "groupBoxVideoInformation";
             this.groupBoxVideoInformation.TabStop = false;
+            // 
+            // richTextBoxDescription
+            // 
+            resources.ApplyResources(this.richTextBoxDescription, "richTextBoxDescription");
+            this.richTextBoxDescription.Name = "richTextBoxDescription";
             // 
             // labelShowDuration
             // 
@@ -190,10 +197,10 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // richTextBoxDescription
+            // propertyGrid1
             // 
-            resources.ApplyResources(this.richTextBoxDescription, "richTextBoxDescription");
-            this.richTextBoxDescription.Name = "richTextBoxDescription";
+            resources.ApplyResources(this.propertyGrid1, "propertyGrid1");
+            this.propertyGrid1.Name = "propertyGrid1";
             // 
             // formMainForm
             // 
@@ -235,6 +242,7 @@
         private System.Windows.Forms.Label labelShowDuration;
         private System.Windows.Forms.Label labelDuration;
         private System.Windows.Forms.RichTextBox richTextBoxDescription;
+        private System.Windows.Forms.PropertyGrid propertyGrid1;
     }
 }
 

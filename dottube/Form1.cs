@@ -17,13 +17,15 @@ namespace dottube
             if (textBox1.Text != null)
             {
                 string VideoURL = textBox1.Text;
-                YoutubeVideo Video = new YoutubeVideo(VideoURL);
-                labelShowDuration.Text = Video.duration.ToString();
-                labelShowVideoID.Text = Video.display_id.ToString();
-                labelShowVideoTitle.Text = Video.title.ToString();
-                labelShowVideoURL.Text = Video.url.ToString();
-                richTextBoxDescription.Text = Video.description.ToString();
+                YoutubeVideo video = Video.GetInstance<YoutubeVideo>(VideoURL);
+                labelShowDuration.Text = video.duration.ToString();
+                labelShowVideoID.Text = video.display_id.ToString();
+                labelShowVideoTitle.Text = video.title.ToString();
+                labelShowVideoURL.Text = video.url.ToString();
+                richTextBoxDescription.Text = video.description.ToString();
+                propertyGrid1.SelectedObject = video;
             }
         }
+
     }
 }
