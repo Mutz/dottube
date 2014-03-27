@@ -33,7 +33,9 @@
             this.tabPageYouTube = new System.Windows.Forms.TabPage();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonUpdateExe = new System.Windows.Forms.Button();
             this.groupBoxVideoInformation = new System.Windows.Forms.GroupBox();
+            this.pictureBoxThumbnail = new System.Windows.Forms.PictureBox();
             this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
             this.labelShowDuration = new System.Windows.Forms.Label();
             this.labelDuration = new System.Windows.Forms.Label();
@@ -52,15 +54,18 @@
             this.buttonGetInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.pictureBoxThumbnail = new System.Windows.Forms.PictureBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listViewPlayList = new System.Windows.Forms.ListView();
+            this.buttonUpdateList = new System.Windows.Forms.Button();
+            this.columnHeaderSelect = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderUploader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControlMain.SuspendLayout();
             this.tabPageYouTube.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBoxVideoInformation.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThumbnail)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -87,12 +92,20 @@
             // groupBox2
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Controls.Add(this.buttonUpdateExe);
             this.groupBox2.Controls.Add(this.groupBoxVideoInformation);
             this.groupBox2.Controls.Add(this.labelTextBoxURL);
             this.groupBox2.Controls.Add(this.buttonGetInfo);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // buttonUpdateExe
+            // 
+            resources.ApplyResources(this.buttonUpdateExe, "buttonUpdateExe");
+            this.buttonUpdateExe.Name = "buttonUpdateExe";
+            this.buttonUpdateExe.UseVisualStyleBackColor = true;
+            this.buttonUpdateExe.Click += new System.EventHandler(this.buttonUpdateExe_Click);
             // 
             // groupBoxVideoInformation
             // 
@@ -114,6 +127,12 @@
             resources.ApplyResources(this.groupBoxVideoInformation, "groupBoxVideoInformation");
             this.groupBoxVideoInformation.Name = "groupBoxVideoInformation";
             this.groupBoxVideoInformation.TabStop = false;
+            // 
+            // pictureBoxThumbnail
+            // 
+            resources.ApplyResources(this.pictureBoxThumbnail, "pictureBoxThumbnail");
+            this.pictureBoxThumbnail.Name = "pictureBoxThumbnail";
+            this.pictureBoxThumbnail.TabStop = false;
             // 
             // richTextBoxDescription
             // 
@@ -204,30 +223,48 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.listBox1);
-            this.tabPage2.Controls.Add(this.listView1);
+            this.tabPage2.Controls.Add(this.buttonUpdateList);
+            this.tabPage2.Controls.Add(this.listViewPlayList);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // listViewPlayList
             // 
-            resources.ApplyResources(this.listView1, "listView1");
-            this.listView1.Name = "listView1";
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewPlayList.CheckBoxes = true;
+            this.listViewPlayList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderSelect,
+            this.columnHeaderTitle,
+            this.columnHeaderUploader,
+            this.columnHeaderDuration});
+            this.listViewPlayList.FullRowSelect = true;
+            resources.ApplyResources(this.listViewPlayList, "listViewPlayList");
+            this.listViewPlayList.Name = "listViewPlayList";
+            this.listViewPlayList.UseCompatibleStateImageBehavior = false;
+            this.listViewPlayList.View = System.Windows.Forms.View.Details;
             // 
-            // pictureBoxThumbnail
+            // buttonUpdateList
             // 
-            resources.ApplyResources(this.pictureBoxThumbnail, "pictureBoxThumbnail");
-            this.pictureBoxThumbnail.Name = "pictureBoxThumbnail";
-            this.pictureBoxThumbnail.TabStop = false;
+            resources.ApplyResources(this.buttonUpdateList, "buttonUpdateList");
+            this.buttonUpdateList.Name = "buttonUpdateList";
+            this.buttonUpdateList.UseVisualStyleBackColor = true;
+            this.buttonUpdateList.Click += new System.EventHandler(this.buttonUpdateList_Click);
             // 
-            // listBox1
+            // columnHeaderSelect
             // 
-            this.listBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.listBox1, "listBox1");
-            this.listBox1.Name = "listBox1";
+            resources.ApplyResources(this.columnHeaderSelect, "columnHeaderSelect");
+            // 
+            // columnHeaderTitle
+            // 
+            resources.ApplyResources(this.columnHeaderTitle, "columnHeaderTitle");
+            // 
+            // columnHeaderUploader
+            // 
+            resources.ApplyResources(this.columnHeaderUploader, "columnHeaderUploader");
+            // 
+            // columnHeaderDuration
+            // 
+            resources.ApplyResources(this.columnHeaderDuration, "columnHeaderDuration");
             // 
             // formMainForm
             // 
@@ -242,8 +279,8 @@
             this.groupBox2.PerformLayout();
             this.groupBoxVideoInformation.ResumeLayout(false);
             this.groupBoxVideoInformation.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThumbnail)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -273,9 +310,14 @@
         private System.Windows.Forms.Label labelDuration;
         private System.Windows.Forms.RichTextBox richTextBoxDescription;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.PictureBox pictureBoxThumbnail;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button buttonUpdateExe;
+        private System.Windows.Forms.Button buttonUpdateList;
+        private System.Windows.Forms.ListView listViewPlayList;
+        private System.Windows.Forms.ColumnHeader columnHeaderSelect;
+        private System.Windows.Forms.ColumnHeader columnHeaderTitle;
+        private System.Windows.Forms.ColumnHeader columnHeaderUploader;
+        private System.Windows.Forms.ColumnHeader columnHeaderDuration;
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using log4net;
+using System.Collections.Generic;
 using System;
 using System.Windows.Forms;
 
@@ -7,44 +8,46 @@ namespace dottube
     public partial class formMainForm : Form
     {
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        protected PlayList liste = new PlayList();
 
         public formMainForm()
         {
             InitializeComponent();
+            
+            
         }
 
         private void buttonGetInfo_Click(object sender, System.EventArgs e)
         {
             if (textBox1.Text != null)
             {
+                // Get the Information for the Video from URL in textBox1
                 YoutubeVideo video = Video.GetInstance<YoutubeVideo>(textBox1.Text);
-                
-                //Build the Items for Listing
-                ListViewItem listVideo = new ListViewItem(video.title);
-                listVideo.SubItems.Add(TimeSpan.FromSeconds(video.duration).ToString("mm':'ss"));
-                listVideo.SubItems.Add(video.uploader);
-                listVideo.SubItems.Add(video.description);
-
-                // Add the Item to the Listview
-                listView1.Items.Add(listVideo);
-                
-
-
+                liste.Add(new PlayListItem(video));
+                liste.UpdatePlaylist(listViewPlayList);
                 /**
                  * Start Debugging Stuff
                  **/
                 // Debugging display Information
                 labelShowFileName.Text = video._filename;
-                labelShowDuration.Text = duration;
-                labelShowVideoID.Text = video.display_id.ToString();
-                labelShowVideoTitle.Text = video.title.ToString();
-                labelShowVideoURL.Text = video.url.ToString();
+                labelShowVideoID.Text = video.display_id;
+                labelShowVideoTitle.Text = video.title;
+                labelShowVideoURL.Text = video.url;
+                labelShowDuration.Text = TimeSpan.FromSeconds((int)video.duration).ToString("mm':'ss");
                 richTextBoxDescription.Text = video.description.ToString();
                 pictureBoxThumbnail.LoadAsync(video.thumbnail);
-                
-                //PropertyGrid for Debugging Purpose
                 propertyGrid1.SelectedObject = video;
             }
+        }
+
+        private void buttonUpdateExe_Click(object sender, EventArgs e)
+        {
+            Wrapper.UpdateExe();
+        }
+
+        private void buttonUpdateList_Click(object sender, EventArgs e)
+        {
+            
         }
 
     }

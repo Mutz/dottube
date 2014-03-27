@@ -1,11 +1,18 @@
 ﻿using System.Diagnostics;
 using log4net;
+using System.Windows.Forms;
 
 namespace dottube
 {
     class Wrapper
     {
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+        public static void UpdateExe()
+        {
+            string result = YoutubeDl("--update", null);
+            MessageBox.Show(result);
+        }
 
         public static string YoutubeDl(string strParam, string strURL)
         {
