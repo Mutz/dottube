@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using System;
 using System.Windows.Forms;
 
@@ -8,28 +9,27 @@ namespace dottube
 {
     public class PlayList : List<PlayListItem>
     {
-        protected bool ItemExist(PlayList liste, PlayListItem video)
+        public void AddVideo(Video video)
         {
-            if (liste.Contains(video))
+            if (!this.Any(item => item.id == video.id))
             {
-                return true;
+                var newitem = new PlayListItem(video);
+                this.Add(newitem);
             }
-            else
-                return false;
         }
 
         public void UpdatePlaylist(ListView view)
         {
+            view.Items.Clear();
             foreach (PlayListItem video in this)
             {
-                if (!ItemExist(this, video))
-                {
                     ListViewItem playlistentry = new ListViewItem();
                     playlistentry.SubItems.Add(video.title.ToString());
                     playlistentry.SubItems.Add(video.uploader.ToString());
                     playlistentry.SubItems.Add(video.duration.ToString());
+                    playlistentry.SubItems.Add(video.url.ToString());
                     view.Items.Add(playlistentry);
-                }
+             
             }
         }
     }

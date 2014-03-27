@@ -12,6 +12,7 @@ namespace dottube
         public string id { get; set; }
         public string duration { get; set; }
         public string uploader { get; set; }
+        public string url { get; set; }
 
         public PlayListItem(Video obj)
         {
@@ -19,6 +20,7 @@ namespace dottube
             id = obj.id;
             duration = TimeSpan.FromSeconds((int)obj.duration).ToString("mm':'ss");
             uploader = obj.uploader;
+            url = obj.webpage_url;
         }
     }
 }

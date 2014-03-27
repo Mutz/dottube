@@ -54,12 +54,14 @@
             this.buttonGetInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.buttonDownload = new System.Windows.Forms.Button();
             this.listViewPlayList = new System.Windows.Forms.ListView();
-            this.buttonUpdateList = new System.Windows.Forms.Button();
             this.columnHeaderSelect = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderUploader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderUrl = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tabControlMain.SuspendLayout();
             this.tabPageYouTube.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -223,11 +225,19 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.buttonUpdateList);
+            this.tabPage2.Controls.Add(this.progressBar1);
+            this.tabPage2.Controls.Add(this.buttonDownload);
             this.tabPage2.Controls.Add(this.listViewPlayList);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // buttonDownload
+            // 
+            resources.ApplyResources(this.buttonDownload, "buttonDownload");
+            this.buttonDownload.Name = "buttonDownload";
+            this.buttonDownload.UseVisualStyleBackColor = true;
+            this.buttonDownload.Click += new System.EventHandler(this.buttonDownload_Click);
             // 
             // listViewPlayList
             // 
@@ -236,19 +246,13 @@
             this.columnHeaderSelect,
             this.columnHeaderTitle,
             this.columnHeaderUploader,
-            this.columnHeaderDuration});
+            this.columnHeaderDuration,
+            this.columnHeaderUrl});
             this.listViewPlayList.FullRowSelect = true;
             resources.ApplyResources(this.listViewPlayList, "listViewPlayList");
             this.listViewPlayList.Name = "listViewPlayList";
             this.listViewPlayList.UseCompatibleStateImageBehavior = false;
             this.listViewPlayList.View = System.Windows.Forms.View.Details;
-            // 
-            // buttonUpdateList
-            // 
-            resources.ApplyResources(this.buttonUpdateList, "buttonUpdateList");
-            this.buttonUpdateList.Name = "buttonUpdateList";
-            this.buttonUpdateList.UseVisualStyleBackColor = true;
-            this.buttonUpdateList.Click += new System.EventHandler(this.buttonUpdateList_Click);
             // 
             // columnHeaderSelect
             // 
@@ -265,6 +269,17 @@
             // columnHeaderDuration
             // 
             resources.ApplyResources(this.columnHeaderDuration, "columnHeaderDuration");
+            // 
+            // columnHeaderUrl
+            // 
+            resources.ApplyResources(this.columnHeaderUrl, "columnHeaderUrl");
+            // 
+            // progressBar1
+            // 
+            resources.ApplyResources(this.progressBar1, "progressBar1");
+            this.progressBar1.MarqueeAnimationSpeed = 30;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             // 
             // formMainForm
             // 
@@ -312,12 +327,14 @@
         private System.Windows.Forms.PropertyGrid propertyGrid1;
         private System.Windows.Forms.PictureBox pictureBoxThumbnail;
         private System.Windows.Forms.Button buttonUpdateExe;
-        private System.Windows.Forms.Button buttonUpdateList;
         private System.Windows.Forms.ListView listViewPlayList;
         private System.Windows.Forms.ColumnHeader columnHeaderSelect;
         private System.Windows.Forms.ColumnHeader columnHeaderTitle;
         private System.Windows.Forms.ColumnHeader columnHeaderUploader;
         private System.Windows.Forms.ColumnHeader columnHeaderDuration;
+        private System.Windows.Forms.Button buttonDownload;
+        private System.Windows.Forms.ColumnHeader columnHeaderUrl;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 
