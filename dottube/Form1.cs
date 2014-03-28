@@ -39,8 +39,8 @@ namespace Dottube
         /// <summary>
         /// Get the Information
         /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">Event</param>
+        /// <param name="sender">sender object</param>
+        /// <param name="e">Event object</param>
         private void buttonGetInfo_Click(object sender, System.EventArgs e)
         {
             if (textBox1.Text != null)
@@ -52,10 +52,6 @@ namespace Dottube
                     YoutubeVideo video = gettask.Result;
                     liste.AddVideo(video);
                     liste.UpdatePlaylist(listViewPlayList);
-                    /**
-                     * Show Information
-                     **/
-
                     labelShowFileName.Text = video._filename;
                     labelShowVideoTitle.Text = video.title;
                     labelShowDuration.Text = TimeSpan.FromSeconds((int)video.duration).ToString("mm':'ss");
@@ -69,8 +65,8 @@ namespace Dottube
         /// <summary>
         /// Update the Program
         /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">Event</param>
+        /// <param name="sender">sender object</param>
+        /// <param name="e">Event object</param>
         private void buttonUpdateExe_Click(object sender, EventArgs e)
         {
             Wrapper.UpdateExe();
@@ -79,8 +75,8 @@ namespace Dottube
         /// <summary>
         /// Download the selected Videos
         /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">events</param>
+        /// <param name="sender">sender object</param>
+        /// <param name="e">events object</param>
         private void buttonDownload_Click(object sender, EventArgs e)
         {
             if (listViewPlayList.CheckedItems.Count > 0)
@@ -114,8 +110,8 @@ namespace Dottube
         /// <summary>
         /// Remove selected Item
         /// </summary>
-        /// <param name="sender">sender</param>
-        /// <param name="e">Event</param>
+        /// <param name="sender">sender object</param>
+        /// <param name="e">Event object</param>
         private void buttonRemoveSelected_Click(object sender, EventArgs e)
         {
             if (listViewPlayList.CheckedItems.Count > 0)
