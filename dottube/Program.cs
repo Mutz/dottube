@@ -12,10 +12,13 @@ namespace Dottube
     using System.Threading.Tasks;
     using System.Windows.Forms;
 
-    static class Program
+    /// <summary>
+    /// Main Program
+    /// </summary>
+    public static class Program
     {
         /// <summary>
-        /// Der Haupteinstiegspunkt für die Anwendung.
+        /// Main Entry Point
         /// </summary>
         [STAThread]
         static void Main()

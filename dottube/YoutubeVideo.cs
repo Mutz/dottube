@@ -9,7 +9,7 @@ namespace Dottube
     /// <summary>
     /// Class extends Class Video
     /// </summary>
-    class YoutubeVideo : Video
+    public class YoutubeVideo : Video
     {
         /// <summary>
         /// Implementation for Base

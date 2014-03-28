@@ -13,7 +13,7 @@ namespace Dottube
     /// <summary>
     /// Class Wrapper
     /// </summary>
-    class Wrapper
+    public class Wrapper
     {
         /// <summary>
         /// log4net Log
