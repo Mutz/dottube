@@ -26,10 +26,10 @@ namespace Dottube
         /// <summary>
         /// Initialize Playlist
         /// </summary>
-        protected PlayList liste = new PlayList();
+        private PlayList liste = new PlayList();
 
         /// <summary>
-        /// Initialize the MainForm
+        /// Initializes a new instance of the <see cref="MainForm" /> class
         /// </summary>
         public MainForm()
         {
@@ -45,9 +45,9 @@ namespace Dottube
         {
             if (textBox1.Text != null)
             {
-
                 // Get the Information for the Video from URL in textBox1
-                Task.Factory.StartNew<YoutubeVideo>(() => { return Video.GetInstance<YoutubeVideo>(textBox1.Text); }).ContinueWith(gettask =>
+                Task.Factory.StartNew<YoutubeVideo>(() => { return Video.GetInstance<YoutubeVideo>(textBox1.Text); }).ContinueWith(
+                    gettask =>
                 {
                     YoutubeVideo video = gettask.Result;
                     liste.AddVideo(video);
@@ -61,8 +61,8 @@ namespace Dottube
                     labelShowDuration.Text = TimeSpan.FromSeconds((int)video.duration).ToString("mm':'ss");
                     richTextBoxDescription.Text = video.description.ToString();
                     pictureBoxThumbNail.LoadAsync(video.thumbnail);
-
-                }, TaskScheduler.FromCurrentSynchronizationContext());
+                }, 
+                TaskScheduler.FromCurrentSynchronizationContext());
             }
         }
 
@@ -99,14 +99,15 @@ namespace Dottube
                     foreach (string url in urls)
                     {
                         Wrapper.YoutubeDl("--output %(uploader)s/%(title)s-%(id)s.%(ext)s", url);
-
                     }
-                }).ContinueWith(task =>
+                }).ContinueWith(
+                task =>
                 {
                     MessageBox.Show("Finished!");
                     buttonDownload.Enabled = true;
                     progressBarDownload.Visible = false;
-                }, TaskScheduler.FromCurrentSynchronizationContext()); 
+                }, 
+                TaskScheduler.FromCurrentSynchronizationContext()); 
             }
         }
 
@@ -122,7 +123,6 @@ namespace Dottube
                 foreach (ListViewItem item in listViewPlayList.CheckedItems)
                 {
                     listViewPlayList.Items.Remove(item);
-                    
                 }
             }
         }
