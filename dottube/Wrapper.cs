@@ -16,9 +16,9 @@ namespace Dottube
     class Wrapper
     {
         /// <summary>
-        /// log4net log
+        /// log4net Log
         /// </summary>
-        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         /// <summary>
         /// Update the Exe
@@ -43,12 +43,12 @@ namespace Dottube
             youtubedl.StartInfo.RedirectStandardOutput = true;  // Redirect the StandardOutput
             youtubedl.StartInfo.FileName = "youtube-dl.exe";
             youtubedl.StartInfo.Arguments = strParam + " " + strURL;
-            log.Debug(youtubedl.StartInfo.Arguments.ToString());
+            Log.Debug(youtubedl.StartInfo.Arguments.ToString());
             youtubedl.Start();
 
             string strOutput = youtubedl.StandardOutput.ReadToEnd();
             youtubedl.WaitForExit();
-            log.Debug(strOutput);
+            Log.Debug(strOutput);
             return strOutput;
         }
     }

@@ -7,12 +7,12 @@
 namespace Dottube
 {
     /// <summary>
-    /// Class YoutubeVideo extends Class Video
+    /// Class extends Class Video
     /// </summary>
     class YoutubeVideo : Video
     {
         /// <summary>
-        /// Implementation of Init()
+        /// Implementation for Base
         /// </summary>
         protected override void Init()
         {
