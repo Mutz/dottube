@@ -117,31 +117,160 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="propertyGrid1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="propertyGrid1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 444</value>
+  <data name="buttonRemoveSelected.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 683</value>
   </data>
-  <data name="propertyGrid1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>648, 275</value>
+  <data name="buttonRemoveSelected.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="propertyGrid1.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonRemoveSelected.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="buttonRemoveSelected.Text" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
+  <data name="&gt;&gt;buttonRemoveSelected.Name" xml:space="preserve">
+    <value>buttonRemoveSelected</value>
+  </data>
+  <data name="&gt;&gt;buttonRemoveSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonRemoveSelected.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;buttonRemoveSelected.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="progressBarDownload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 652</value>
+  </data>
+  <data name="progressBarDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>741, 24</value>
+  </data>
+  <data name="progressBarDownload.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;propertyGrid1.Name" xml:space="preserve">
-    <value>propertyGrid1</value>
+  <data name="progressBarDownload.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;propertyGrid1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PropertyGrid, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;progressBarDownload.Name" xml:space="preserve">
+    <value>progressBarDownload</value>
   </data>
-  <data name="&gt;&gt;propertyGrid1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;progressBarDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBarDownload.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;progressBarDownload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonDownload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 682</value>
+  </data>
+  <data name="buttonDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 24</value>
+  </data>
+  <data name="buttonDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonDownload.Text" xml:space="preserve">
+    <value>Download Selected</value>
+  </data>
+  <data name="&gt;&gt;buttonDownload.Name" xml:space="preserve">
+    <value>buttonDownload</value>
+  </data>
+  <data name="&gt;&gt;buttonDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonDownload.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;buttonDownload.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="columnHeaderSelect.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="columnHeaderSelect.Width" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="columnHeaderTitle.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="columnHeaderTitle.Width" type="System.Int32, mscorlib">
+    <value>417</value>
+  </data>
+  <data name="columnHeaderUploader.Text" xml:space="preserve">
+    <value>Uploader</value>
+  </data>
+  <data name="columnHeaderUploader.Width" type="System.Int32, mscorlib">
+    <value>189</value>
+  </data>
+  <data name="columnHeaderDuration.Text" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="columnHeaderDuration.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="columnHeaderUrl.Text" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="columnHeaderUrl.Width" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="listViewPlayList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="listViewPlayList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>741, 629</value>
+  </data>
+  <data name="listViewPlayList.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;listViewPlayList.Name" xml:space="preserve">
+    <value>listViewPlayList</value>
+  </data>
+  <data name="&gt;&gt;listViewPlayList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewPlayList.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;listViewPlayList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>399, 7</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>753, 712</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>tabPageYouTube</value>
   </data>
-  <data name="&gt;&gt;propertyGrid1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="groupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -151,7 +280,7 @@
     <value>True</value>
   </data>
   <data name="buttonUpdateExe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 46</value>
+    <value>157, 44</value>
   </data>
   <data name="buttonUpdateExe.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -160,7 +289,7 @@
     <value>4</value>
   </data>
   <data name="buttonUpdateExe.Text" xml:space="preserve">
-    <value>Update</value>
+    <value>Update Exe</value>
   </data>
   <data name="&gt;&gt;buttonUpdateExe.Name" xml:space="preserve">
     <value>buttonUpdateExe</value>
@@ -174,41 +303,62 @@
   <data name="&gt;&gt;buttonUpdateExe.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pictureBoxThumbnail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="pictureBoxThumbNail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 356</value>
   </data>
-  <data name="pictureBoxThumbnail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="pictureBoxThumbNail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 246</value>
   </data>
-  <data name="pictureBoxThumbnail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 109</value>
-  </data>
-  <data name="pictureBoxThumbnail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 137</value>
-  </data>
-  <data name="pictureBoxThumbnail.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="pictureBoxThumbNail.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="pictureBoxThumbnail.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="pictureBoxThumbNail.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="&gt;&gt;pictureBoxThumbnail.Name" xml:space="preserve">
-    <value>pictureBoxThumbnail</value>
+  <data name="&gt;&gt;pictureBoxThumbNail.Name" xml:space="preserve">
+    <value>pictureBoxThumbNail</value>
   </data>
-  <data name="&gt;&gt;pictureBoxThumbnail.Type" xml:space="preserve">
+  <data name="&gt;&gt;pictureBoxThumbNail.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBoxThumbnail.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pictureBoxThumbNail.Parent" xml:space="preserve">
     <value>groupBoxVideoInformation</value>
   </data>
-  <data name="&gt;&gt;pictureBoxThumbnail.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pictureBoxThumbNail.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 340</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBoxVideoInformation</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="richTextBoxDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 109</value>
+    <value>6, 89</value>
   </data>
   <data name="richTextBoxDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 170</value>
+    <value>356, 248</value>
   </data>
   <data name="richTextBoxDescription.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -226,7 +376,7 @@
     <value>groupBoxVideoInformation</value>
   </data>
   <data name="&gt;&gt;richTextBoxDescription.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="labelShowDuration.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -235,7 +385,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelShowDuration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 92</value>
+    <value>70, 51</value>
   </data>
   <data name="labelShowDuration.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 13</value>
@@ -256,7 +406,7 @@
     <value>groupBoxVideoInformation</value>
   </data>
   <data name="&gt;&gt;labelShowDuration.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="labelDuration.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -265,7 +415,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelDuration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 92</value>
+    <value>14, 51</value>
   </data>
   <data name="labelDuration.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -286,7 +436,7 @@
     <value>groupBoxVideoInformation</value>
   </data>
   <data name="&gt;&gt;labelDuration.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="labelVideoDescription.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -295,7 +445,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelVideoDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 105</value>
+    <value>1, 73</value>
   </data>
   <data name="labelVideoDescription.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 13</value>
@@ -316,7 +466,7 @@
     <value>groupBoxVideoInformation</value>
   </data>
   <data name="&gt;&gt;labelVideoDescription.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="labelShowFileName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -325,7 +475,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelShowFileName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 40</value>
+    <value>70, 25</value>
   </data>
   <data name="labelShowFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 13</value>
@@ -346,67 +496,7 @@
     <value>groupBoxVideoInformation</value>
   </data>
   <data name="&gt;&gt;labelShowFileName.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="labelShowFormatID.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelShowFormatID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelShowFormatID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 27</value>
-  </data>
-  <data name="labelShowFormatID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 13</value>
-  </data>
-  <data name="labelShowFormatID.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="labelShowFormatID.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;labelShowFormatID.Name" xml:space="preserve">
-    <value>labelShowFormatID</value>
-  </data>
-  <data name="&gt;&gt;labelShowFormatID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelShowFormatID.Parent" xml:space="preserve">
-    <value>groupBoxVideoInformation</value>
-  </data>
-  <data name="&gt;&gt;labelShowFormatID.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="labelShowVideoURL.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelShowVideoURL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelShowVideoURL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 66</value>
-  </data>
-  <data name="labelShowVideoURL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 13</value>
-  </data>
-  <data name="labelShowVideoURL.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="labelShowVideoURL.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;labelShowVideoURL.Name" xml:space="preserve">
-    <value>labelShowVideoURL</value>
-  </data>
-  <data name="&gt;&gt;labelShowVideoURL.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelShowVideoURL.Parent" xml:space="preserve">
-    <value>groupBoxVideoInformation</value>
-  </data>
-  <data name="&gt;&gt;labelShowVideoURL.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="labelShowVideoTitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -415,7 +505,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelShowVideoTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 79</value>
+    <value>70, 38</value>
   </data>
   <data name="labelShowVideoTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 13</value>
@@ -436,37 +526,7 @@
     <value>groupBoxVideoInformation</value>
   </data>
   <data name="&gt;&gt;labelShowVideoTitle.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="labelShowVideoID.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelShowVideoID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelShowVideoID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 53</value>
-  </data>
-  <data name="labelShowVideoID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 13</value>
-  </data>
-  <data name="labelShowVideoID.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelShowVideoID.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="&gt;&gt;labelShowVideoID.Name" xml:space="preserve">
-    <value>labelShowVideoID</value>
-  </data>
-  <data name="&gt;&gt;labelShowVideoID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelShowVideoID.Parent" xml:space="preserve">
-    <value>groupBoxVideoInformation</value>
-  </data>
-  <data name="&gt;&gt;labelShowVideoID.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="labelFileName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -475,7 +535,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelFileName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 40</value>
+    <value>12, 25</value>
   </data>
   <data name="labelFileName.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
@@ -496,67 +556,7 @@
     <value>groupBoxVideoInformation</value>
   </data>
   <data name="&gt;&gt;labelFileName.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="labelFormatID.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelFormatID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelFormatID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 27</value>
-  </data>
-  <data name="labelFormatID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="labelFormatID.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="labelFormatID.Text" xml:space="preserve">
-    <value>Format ID:</value>
-  </data>
-  <data name="&gt;&gt;labelFormatID.Name" xml:space="preserve">
-    <value>labelFormatID</value>
-  </data>
-  <data name="&gt;&gt;labelFormatID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelFormatID.Parent" xml:space="preserve">
-    <value>groupBoxVideoInformation</value>
-  </data>
-  <data name="&gt;&gt;labelFormatID.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="labelURL.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelURL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelURL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 66</value>
-  </data>
-  <data name="labelURL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 13</value>
-  </data>
-  <data name="labelURL.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelURL.Text" xml:space="preserve">
-    <value>URL:</value>
-  </data>
-  <data name="&gt;&gt;labelURL.Name" xml:space="preserve">
-    <value>labelURL</value>
-  </data>
-  <data name="&gt;&gt;labelURL.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelURL.Parent" xml:space="preserve">
-    <value>groupBoxVideoInformation</value>
-  </data>
-  <data name="&gt;&gt;labelURL.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>8</value>
   </data>
   <data name="labelVideoTitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -565,7 +565,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelVideoTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 79</value>
+    <value>34, 38</value>
   </data>
   <data name="labelVideoTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 13</value>
@@ -586,43 +586,13 @@
     <value>groupBoxVideoInformation</value>
   </data>
   <data name="&gt;&gt;labelVideoTitle.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="labelVideoID.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelVideoID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelVideoID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 53</value>
-  </data>
-  <data name="labelVideoID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
-  </data>
-  <data name="labelVideoID.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="labelVideoID.Text" xml:space="preserve">
-    <value>Video ID:</value>
-  </data>
-  <data name="&gt;&gt;labelVideoID.Name" xml:space="preserve">
-    <value>labelVideoID</value>
-  </data>
-  <data name="&gt;&gt;labelVideoID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelVideoID.Parent" xml:space="preserve">
-    <value>groupBoxVideoInformation</value>
-  </data>
-  <data name="&gt;&gt;labelVideoID.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>9</value>
   </data>
   <data name="groupBoxVideoInformation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 121</value>
+    <value>6, 85</value>
   </data>
   <data name="groupBoxVideoInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>643, 305</value>
+    <value>368, 608</value>
   </data>
   <data name="groupBoxVideoInformation.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -676,16 +646,16 @@
     <value>NoControl</value>
   </data>
   <data name="buttonGetInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 16</value>
+    <value>52, 44</value>
   </data>
   <data name="buttonGetInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>99, 23</value>
   </data>
   <data name="buttonGetInfo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="buttonGetInfo.Text" xml:space="preserve">
-    <value>Get Info</value>
+    <value>Get Video Info</value>
   </data>
   <data name="&gt;&gt;buttonGetInfo.Name" xml:space="preserve">
     <value>buttonGetInfo</value>
@@ -703,7 +673,7 @@
     <value>52, 18</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 20</value>
+    <value>322, 20</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -724,7 +694,7 @@
     <value>8, 6</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>655, 445</value>
+    <value>384, 712</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -748,7 +718,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageYouTube.Size" type="System.Drawing.Size, System.Drawing">
-    <value>665, 727</value>
+    <value>1160, 727</value>
   </data>
   <data name="tabPageYouTube.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -768,129 +738,6 @@
   <data name="&gt;&gt;tabPageYouTube.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 344</value>
-  </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 23</value>
-  </data>
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="progressBar1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
-    <value>progressBar1</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="buttonDownload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 344</value>
-  </data>
-  <data name="buttonDownload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 23</value>
-  </data>
-  <data name="buttonDownload.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonDownload.Text" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="&gt;&gt;buttonDownload.Name" xml:space="preserve">
-    <value>buttonDownload</value>
-  </data>
-  <data name="&gt;&gt;buttonDownload.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonDownload.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;buttonDownload.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="columnHeaderSelect.Text" xml:space="preserve">
-    <value>Select</value>
-  </data>
-  <data name="columnHeaderSelect.Width" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="columnHeaderTitle.Text" xml:space="preserve">
-    <value>Title</value>
-  </data>
-  <data name="columnHeaderTitle.Width" type="System.Int32, mscorlib">
-    <value>428</value>
-  </data>
-  <data name="columnHeaderUploader.Text" xml:space="preserve">
-    <value>Uploader</value>
-  </data>
-  <data name="columnHeaderUploader.Width" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="columnHeaderDuration.Text" xml:space="preserve">
-    <value>Duration</value>
-  </data>
-  <data name="columnHeaderUrl.Text" xml:space="preserve">
-    <value>Url</value>
-  </data>
-  <data name="columnHeaderUrl.Width" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="listViewPlayList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 7</value>
-  </data>
-  <data name="listViewPlayList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>648, 331</value>
-  </data>
-  <data name="listViewPlayList.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listViewPlayList.Name" xml:space="preserve">
-    <value>listViewPlayList</value>
-  </data>
-  <data name="&gt;&gt;listViewPlayList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listViewPlayList.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;listViewPlayList.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>665, 727</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControlMain</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="tabControlMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -898,7 +745,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControlMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>673, 753</value>
+    <value>1168, 753</value>
   </data>
   <data name="tabControlMain.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -918,11 +765,14 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>673, 753</value>
+    <value>1168, 753</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>dotTube</value>

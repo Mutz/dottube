@@ -18,6 +18,11 @@ namespace dottube
             }
         }
 
+        public void RemoveVideo(Video video)
+        {
+
+        }
+
         public void UpdatePlaylist(ListView view)
         {
             view.Items.Clear();

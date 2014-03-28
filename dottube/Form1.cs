@@ -15,8 +15,6 @@ namespace dottube
         public formMainForm()
         {
             InitializeComponent();
-            
-            
         }
 
         private void buttonGetInfo_Click(object sender, System.EventArgs e)
@@ -31,17 +29,15 @@ namespace dottube
                     liste.AddVideo(video);
                     liste.UpdatePlaylist(listViewPlayList);
                     /**
-                     * Start Debugging Stuff
+                     * Show Information
                      **/
-                    // Debugging display Information
+
                     labelShowFileName.Text = video._filename;
-                    labelShowVideoID.Text = video.display_id;
                     labelShowVideoTitle.Text = video.title;
-                    labelShowVideoURL.Text = video.url;
                     labelShowDuration.Text = TimeSpan.FromSeconds((int)video.duration).ToString("mm':'ss");
                     richTextBoxDescription.Text = video.description.ToString();
-                    pictureBoxThumbnail.LoadAsync(video.thumbnail);
-                    propertyGrid1.SelectedObject = video;
+                    pictureBoxThumbNail.LoadAsync(video.thumbnail);
+
                 }, TaskScheduler.FromCurrentSynchronizationContext());
             }
         }
@@ -51,37 +47,45 @@ namespace dottube
             Wrapper.UpdateExe();
         }
 
-        private void buttonUpdateList_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void buttonDownload_Click(object sender, EventArgs e)
         {
-            buttonDownload.Enabled = false;
-            progressBar1.Visible = true;
-            var urls = new List<string>();
-            foreach (ListViewItem item in listViewPlayList.CheckedItems)
+            if (listViewPlayList.CheckedItems.Count > 0)
             {
-                urls.Add(item.SubItems[4].Text);
-            }
-
-            Task.Factory.StartNew(() =>
-            {
-                foreach (string url in urls)
+                buttonDownload.Enabled = false;
+                progressBarDownload.Visible = true;
+                var urls = new List<string>();
+                foreach (ListViewItem item in listViewPlayList.CheckedItems)
                 {
-                    Wrapper.YoutubeDl("--output %(uploader)s/%(title)s-%(id)s.%(ext)s", url);
-
+                    urls.Add(item.SubItems[4].Text);
+                    item.Checked = false;
                 }
-            }).ContinueWith(task => 
-            {
-                MessageBox.Show("Finished!"); 
-                buttonDownload.Enabled = true;
-                progressBar1.Visible = false;
-            }, TaskScheduler.FromCurrentSynchronizationContext());
 
-            //listViewPlayList.CheckedItems.OfType<ListViewItem>().Select(item => Task.Factory.StartNew(()=> Wrapper.YoutubeDl("-o %(uploader)s\\%(title)s.%(ext)s",item.SubItems[4].Text)));
+                Task.Factory.StartNew(() =>
+                {
+                    foreach (string url in urls)
+                    {
+                        Wrapper.YoutubeDl("--output %(uploader)s/%(title)s-%(id)s.%(ext)s", url);
+
+                    }
+                }).ContinueWith(task =>
+                {
+                    MessageBox.Show("Finished!");
+                    buttonDownload.Enabled = true;
+                    progressBarDownload.Visible = false;
+                }, TaskScheduler.FromCurrentSynchronizationContext()); 
+            }
         }
 
+        private void buttonRemoveSelected_Click(object sender, EventArgs e)
+        {
+            if (listViewPlayList.CheckedItems.Count > 0)
+            {
+                foreach (ListViewItem item in listViewPlayList.CheckedItems)
+                {
+                    listViewPlayList.Items.Remove(item);
+                    
+                }
+            }
+        }
     }
 }
