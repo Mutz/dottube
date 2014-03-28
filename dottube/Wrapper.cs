@@ -16,12 +16,12 @@ namespace Dottube
     class Wrapper
     {
         /// <summary>
-        /// log4net init
+        /// log4net log
         /// </summary>
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         /// <summary>
-        /// Update youtube-dl.exe
+        /// Update the Exe
         /// </summary>
         public static void UpdateExe()
         {
@@ -30,11 +30,11 @@ namespace Dottube
         }
 
         /// <summary>
-        /// Calls youtube-dl.exe with the Parameters defined by <paramref name="strParam"/> on the <paramref name="strURL"/>
+        /// Calls with the Parameters defined by <paramref name="strParam"/> on the <paramref name="strURL"/>
         /// </summary>
-        /// <param name="strParam">Paramters defined by youtube-dl.exe</param>
+        /// <param name="strParam">Parameter defined</param>
         /// <param name="strURL">the Streaming Service URL</param>
-        /// <returns>Console Output of youtube-dl.exe</returns>
+        /// <returns>Console Output of Console</returns>
         public static string YoutubeDl(string strParam, string strURL)
         {
             Process youtubedl = new Process();
