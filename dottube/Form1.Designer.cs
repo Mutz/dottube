@@ -1,4 +1,4 @@
-﻿namespace dottube
+﻿namespace Dottube
 {
     partial class formMainForm
     {

@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
-using System;
-using System.Windows.Forms;
+﻿//-----------------------------------------------------------------------
+// <copyright file="PlayList.cs" company="mutz.it">
+//  Copyright (c) mutz.it. All Rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
-namespace dottube
+namespace Dottube
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// public Class Playlist extends List<PlayListItems></PlayListItems>
+    /// </summary>
     public class PlayList : List<PlayListItem>
     {
         /// <summary>
@@ -15,12 +22,13 @@ namespace dottube
         /// <param name="video">The Video Object to be added</param>
         public void AddVideo(Video video)
         {
-            /// Check if there is allready an entry with the id, based on Lambda-Expression
-            if (!this.Any(item => item.id == video.id))
+            // Check if there is allready an entry with the Id, based on Lambda-Expression
+            if (!this.Any(item => item.Id == video.id))
             {
-                /// Create new PlayListItem
+                // Create new PlayListItem
                 var newitem = new PlayListItem(video);
-                /// Add the PlayListItem to the Playlist
+                
+                // Add the PlayListItem to the Playlist
                 this.Add(newitem);
             }
         }
@@ -31,7 +39,6 @@ namespace dottube
         /// <param name="item">The PlayListItem to be removed</param>
         public void RemoveVideo(PlayListItem item)
         {
-            
         }
 
         /// <summary>
@@ -40,16 +47,17 @@ namespace dottube
         /// <param name="view">The ListView-Control to be populated</param>
         public void UpdatePlaylist(ListView view)
         {
-            /// Delete all Items on the ListView Control
+            // Delete all Items on the ListView Control
             view.Items.Clear();
-            /// Generate an ListViewItem for every PlayListItem
+            
+            // Generate an ListViewItem for every PlayListItem
             foreach (PlayListItem video in this)
             {
                     ListViewItem playlistentry = new ListViewItem();
-                    playlistentry.SubItems.Add(video.title.ToString());
-                    playlistentry.SubItems.Add(video.uploader.ToString());
-                    playlistentry.SubItems.Add(video.duration.ToString());
-                    playlistentry.SubItems.Add(video.url.ToString());
+                    playlistentry.SubItems.Add(video.Title.ToString());
+                    playlistentry.SubItems.Add(video.Uploader.ToString());
+                    playlistentry.SubItems.Add(video.Duration.ToString());
+                    playlistentry.SubItems.Add(video.Url.ToString());
                     view.Items.Add(playlistentry);             
             }
         }

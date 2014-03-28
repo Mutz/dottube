@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using log4net;
-using Newtonsoft.Json;
+﻿//-----------------------------------------------------------------------
+// <copyright file="YouTubeVideo.cs" company="mutz.it">
+//  Copyright (c) mutz.it. All Rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
-namespace dottube
+namespace Dottube
 {
     class YoutubeVideo : Video
     {

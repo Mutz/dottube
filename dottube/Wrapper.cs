@@ -1,9 +1,18 @@
-﻿using System.Diagnostics;
-using log4net;
-using System.Windows.Forms;
+﻿//-----------------------------------------------------------------------
+// <copyright file="Wrapper.cs" company="mutz.it">
+//  Copyright (c) mutz.it. All Rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
-namespace dottube
+namespace Dottube
 {
+    using log4net;
+    using System.Diagnostics;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// Class Wrapper
+    /// </summary>
     class Wrapper
     {
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

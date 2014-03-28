@@ -1,50 +1,67 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//-----------------------------------------------------------------------
+// <copyright file="PlayListItem.cs" company="mutz.it">
+//  Copyright (c) mutz.it. All Rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
-namespace dottube
+namespace Dottube
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    /// <summary>
+    /// Class PlayListItem
+    /// </summary>
     public class PlayListItem
     {
         /// <summary>
-        /// String title
-        /// </summary>
-        public string title { get; set; }
-        /// <summary>
-        /// String id
-        /// </summary>
-        public string id { get; set; }
-        /// <summary>
-        /// String duration
-        /// </summary>
-        public string duration { get; set; }
-        /// <summary>
-        /// String uploader
-        /// </summary>
-        public string uploader { get; set; }
-        /// <summary>
-        /// String url
-        /// </summary>
-        public string url { get; set; }
-
-        /// <summary>
-        /// Generates a new PlayListItem
+        /// Initializes a new instance of the <see cref="PlayListItem"/> class
         /// </summary>
         /// <param name="obj">The Video-Object to create a PlayListItem for</param>
         public PlayListItem(Video obj)
         {
-            /// Assign the title of Video to the title of the PlayListItem
-            title = obj.title;
-            /// Assign the id of Video to the id of the PlayListItem
-            id = obj.id;
-            /// Assign the duration of Video to the dusration of the PlayListItem and convert it
-            duration = TimeSpan.FromSeconds((int)obj.duration).ToString("mm':'ss");
-            /// Assign the uploader of Video to the uploader of the PlayListItem
-            uploader = obj.uploader;
-            /// Assign the url of Video to the url of the PlayListItem
-            url = obj.webpage_url;
+            // Assign the Title of Video to the Title of the PlayListItem
+            this.Title = obj.title;
+            
+            // Assign the Id of Video to the Id of the PlayListItem
+            this.Id = obj.id;
+            
+            // Assign the Duration of Video to the dusration of the PlayListItem and convert it
+            this.Duration = TimeSpan.FromSeconds((int)obj.duration).ToString("mm':'ss");
+            
+            // Assign the Uploader of Video to the Uploader of the PlayListItem
+            this.Uploader = obj.uploader;
+            
+            // Assign the Url of Video to the Url of the PlayListItem
+            this.Url = obj.webpage_url;
         }
+
+        /// <summary>
+        /// Gets or sets Title
+        /// </summary>
+        public string Title { get; set; }
+
+        /// <summary>
+        /// Gets or sets Id
+        /// </summary>
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets Duration
+        /// </summary>
+        public string Duration { get; set; }
+
+        /// <summary>
+        /// Gets or sets Uploader
+        /// </summary>
+        public string Uploader { get; set; }
+
+        /// <summary>
+        /// Gets or sets Url
+        /// </summary>
+        public string Url { get; set; }
     }
 }

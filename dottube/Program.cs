@@ -1,11 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿//-----------------------------------------------------------------------
+// <copyright file="Program.cs" company="mutz.it">
+//  Copyright (c) mutz.it. All Rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
-namespace dottube
+namespace Dottube
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
+
     static class Program
     {
         /// <summary>

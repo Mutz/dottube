@@ -1,12 +1,21 @@
-﻿using log4net;
-using System.Collections.Generic;
-using System;
-using System.Linq;
-using System.Windows.Forms;
-using System.Threading.Tasks;
+﻿//-----------------------------------------------------------------------
+// <copyright file="Form1.cs" company="mutz.it">
+//  Copyright (c) mutz.it. All Rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 
-namespace dottube
+namespace Dottube
 {
+    using log4net;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// Class formMainForm
+    /// </summary>
     public partial class formMainForm : Form
     {
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
