@@ -21,12 +21,12 @@ namespace Dottube
         /// Main Entry Point
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             log4net.Config.XmlConfigurator.Configure();
-            Application.Run(new formMainForm());
+            Application.Run(new MainForm());
         }
     }
 }

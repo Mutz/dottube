@@ -16,14 +16,14 @@ namespace Dottube
     /// <summary>
     /// Class formMainForm
     /// </summary>
-    public partial class formMainForm : Form
+    public partial class MainForm : Form
     {
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         protected PlayList liste = new PlayList();
 
-        public formMainForm()
+        public MainForm()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void buttonGetInfo_Click(object sender, System.EventArgs e)

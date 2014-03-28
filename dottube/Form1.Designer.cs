@@ -1,6 +1,6 @@
 ﻿namespace Dottube
 {
-    partial class formMainForm
+    partial class MainForm
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageYouTube = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonRemoveSelected = new System.Windows.Forms.Button();
             this.progressBarDownload = new System.Windows.Forms.ProgressBar();
             this.buttonDownload = new System.Windows.Forms.Button();
             this.listViewPlayList = new System.Windows.Forms.ListView();
@@ -43,6 +44,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonUpdateExe = new System.Windows.Forms.Button();
             this.groupBoxVideoInformation = new System.Windows.Forms.GroupBox();
+            this.pictureBoxThumbNail = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
             this.labelShowDuration = new System.Windows.Forms.Label();
@@ -55,8 +57,6 @@
             this.labelTextBoxURL = new System.Windows.Forms.Label();
             this.buttonGetInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBoxThumbNail = new System.Windows.Forms.PictureBox();
-            this.buttonRemoveSelected = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPageYouTube.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -89,6 +89,13 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // buttonRemoveSelected
+            // 
+            resources.ApplyResources(this.buttonRemoveSelected, "buttonRemoveSelected");
+            this.buttonRemoveSelected.Name = "buttonRemoveSelected";
+            this.buttonRemoveSelected.UseVisualStyleBackColor = true;
+            this.buttonRemoveSelected.Click += new System.EventHandler(this.buttonRemoveSelected_Click);
             // 
             // progressBarDownload
             // 
@@ -173,6 +180,12 @@
             this.groupBoxVideoInformation.Name = "groupBoxVideoInformation";
             this.groupBoxVideoInformation.TabStop = false;
             // 
+            // pictureBoxThumbNail
+            // 
+            resources.ApplyResources(this.pictureBoxThumbNail, "pictureBoxThumbNail");
+            this.pictureBoxThumbNail.Name = "pictureBoxThumbNail";
+            this.pictureBoxThumbNail.TabStop = false;
+            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
@@ -235,26 +248,13 @@
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             // 
-            // pictureBoxThumbNail
-            // 
-            resources.ApplyResources(this.pictureBoxThumbNail, "pictureBoxThumbNail");
-            this.pictureBoxThumbNail.Name = "pictureBoxThumbNail";
-            this.pictureBoxThumbNail.TabStop = false;
-            // 
-            // buttonRemoveSelected
-            // 
-            resources.ApplyResources(this.buttonRemoveSelected, "buttonRemoveSelected");
-            this.buttonRemoveSelected.Name = "buttonRemoveSelected";
-            this.buttonRemoveSelected.UseVisualStyleBackColor = true;
-            this.buttonRemoveSelected.Click += new System.EventHandler(this.buttonRemoveSelected_Click);
-            // 
-            // formMainForm
+            // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControlMain);
             this.MaximizeBox = false;
-            this.Name = "formMainForm";
+            this.Name = "MainForm";
             this.tabControlMain.ResumeLayout(false);
             this.tabPageYouTube.ResumeLayout(false);
             this.tabPageYouTube.PerformLayout();
