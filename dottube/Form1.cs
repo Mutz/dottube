@@ -24,15 +24,23 @@ namespace Dottube
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         
         /// <summary>
-        /// Initialise Playlist
+        /// Initialize Playlist
         /// </summary>
         protected PlayList liste = new PlayList();
 
+        /// <summary>
+        /// Initialize the MainForm
+        /// </summary>
         public MainForm()
         {
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Get the Information
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Event</param>
         private void buttonGetInfo_Click(object sender, System.EventArgs e)
         {
             if (textBox1.Text != null)
@@ -58,11 +66,21 @@ namespace Dottube
             }
         }
 
+        /// <summary>
+        /// Update the Program
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Event</param>
         private void buttonUpdateExe_Click(object sender, EventArgs e)
         {
             Wrapper.UpdateExe();
         }
 
+        /// <summary>
+        /// Download the selected Videos
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">events</param>
         private void buttonDownload_Click(object sender, EventArgs e)
         {
             if (listViewPlayList.CheckedItems.Count > 0)
@@ -92,6 +110,11 @@ namespace Dottube
             }
         }
 
+        /// <summary>
+        /// Remove selected Item
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">Event</param>
         private void buttonRemoveSelected_Click(object sender, EventArgs e)
         {
             if (listViewPlayList.CheckedItems.Count > 0)
