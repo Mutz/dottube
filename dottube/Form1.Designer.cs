@@ -32,9 +32,9 @@
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageYouTube = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonRemoveSelected = new System.Windows.Forms.Button();
+            this.ButtonRemoveSelected = new System.Windows.Forms.Button();
             this.progressBarDownload = new System.Windows.Forms.ProgressBar();
-            this.buttonDownload = new System.Windows.Forms.Button();
+            this.ButtonDownload = new System.Windows.Forms.Button();
             this.listViewPlayList = new System.Windows.Forms.ListView();
             this.columnHeaderSelect = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,7 +42,7 @@
             this.columnHeaderDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderUrl = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonUpdateExe = new System.Windows.Forms.Button();
+            this.ButtonUpdateExe = new System.Windows.Forms.Button();
             this.groupBoxVideoInformation = new System.Windows.Forms.GroupBox();
             this.pictureBoxThumbNail = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.labelFileName = new System.Windows.Forms.Label();
             this.labelVideoTitle = new System.Windows.Forms.Label();
             this.labelTextBoxURL = new System.Windows.Forms.Label();
-            this.buttonGetInfo = new System.Windows.Forms.Button();
+            this.ButtonGetInfo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControlMain.SuspendLayout();
             this.tabPageYouTube.SuspendLayout();
@@ -82,20 +82,20 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.buttonRemoveSelected);
+            this.groupBox1.Controls.Add(this.ButtonRemoveSelected);
             this.groupBox1.Controls.Add(this.progressBarDownload);
-            this.groupBox1.Controls.Add(this.buttonDownload);
+            this.groupBox1.Controls.Add(this.ButtonDownload);
             this.groupBox1.Controls.Add(this.listViewPlayList);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // buttonRemoveSelected
+            // ButtonRemoveSelected
             // 
-            resources.ApplyResources(this.buttonRemoveSelected, "buttonRemoveSelected");
-            this.buttonRemoveSelected.Name = "buttonRemoveSelected";
-            this.buttonRemoveSelected.UseVisualStyleBackColor = true;
-            this.buttonRemoveSelected.Click += new System.EventHandler(this.buttonRemoveSelected_Click);
+            resources.ApplyResources(this.ButtonRemoveSelected, "ButtonRemoveSelected");
+            this.ButtonRemoveSelected.Name = "ButtonRemoveSelected";
+            this.ButtonRemoveSelected.UseVisualStyleBackColor = true;
+            this.ButtonRemoveSelected.Click += new System.EventHandler(this.ButtonRemoveSelected_Click);
             // 
             // progressBarDownload
             // 
@@ -104,12 +104,12 @@
             this.progressBarDownload.Name = "progressBarDownload";
             this.progressBarDownload.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             // 
-            // buttonDownload
+            // ButtonDownload
             // 
-            resources.ApplyResources(this.buttonDownload, "buttonDownload");
-            this.buttonDownload.Name = "buttonDownload";
-            this.buttonDownload.UseVisualStyleBackColor = true;
-            this.buttonDownload.Click += new System.EventHandler(this.buttonDownload_Click);
+            resources.ApplyResources(this.ButtonDownload, "ButtonDownload");
+            this.ButtonDownload.Name = "ButtonDownload";
+            this.ButtonDownload.UseVisualStyleBackColor = true;
+            this.ButtonDownload.Click += new System.EventHandler(this.ButtonDownload_Click);
             // 
             // listViewPlayList
             // 
@@ -149,20 +149,20 @@
             // groupBox2
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Controls.Add(this.buttonUpdateExe);
+            this.groupBox2.Controls.Add(this.ButtonUpdateExe);
             this.groupBox2.Controls.Add(this.groupBoxVideoInformation);
             this.groupBox2.Controls.Add(this.labelTextBoxURL);
-            this.groupBox2.Controls.Add(this.buttonGetInfo);
+            this.groupBox2.Controls.Add(this.ButtonGetInfo);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
-            // buttonUpdateExe
+            // ButtonUpdateExe
             // 
-            resources.ApplyResources(this.buttonUpdateExe, "buttonUpdateExe");
-            this.buttonUpdateExe.Name = "buttonUpdateExe";
-            this.buttonUpdateExe.UseVisualStyleBackColor = true;
-            this.buttonUpdateExe.Click += new System.EventHandler(this.buttonUpdateExe_Click);
+            resources.ApplyResources(this.ButtonUpdateExe, "ButtonUpdateExe");
+            this.ButtonUpdateExe.Name = "ButtonUpdateExe";
+            this.ButtonUpdateExe.UseVisualStyleBackColor = true;
+            this.ButtonUpdateExe.Click += new System.EventHandler(this.ButtonUpdateExe_Click);
             // 
             // groupBoxVideoInformation
             // 
@@ -236,12 +236,12 @@
             resources.ApplyResources(this.labelTextBoxURL, "labelTextBoxURL");
             this.labelTextBoxURL.Name = "labelTextBoxURL";
             // 
-            // buttonGetInfo
+            // ButtonGetInfo
             // 
-            resources.ApplyResources(this.buttonGetInfo, "buttonGetInfo");
-            this.buttonGetInfo.Name = "buttonGetInfo";
-            this.buttonGetInfo.UseVisualStyleBackColor = true;
-            this.buttonGetInfo.Click += new System.EventHandler(this.buttonGetInfo_Click);
+            resources.ApplyResources(this.ButtonGetInfo, "ButtonGetInfo");
+            this.ButtonGetInfo.Name = "ButtonGetInfo";
+            this.ButtonGetInfo.UseVisualStyleBackColor = true;
+            this.ButtonGetInfo.Click += new System.EventHandler(this.ButtonGetInfo_Click);
             // 
             // textBox1
             // 
@@ -280,15 +280,15 @@
         private System.Windows.Forms.Label labelFileName;
         private System.Windows.Forms.Label labelVideoTitle;
         private System.Windows.Forms.Label labelTextBoxURL;
-        private System.Windows.Forms.Button buttonGetInfo;
+        private System.Windows.Forms.Button ButtonGetInfo;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label labelShowDuration;
         private System.Windows.Forms.Label labelDuration;
         private System.Windows.Forms.RichTextBox richTextBoxDescription;
-        private System.Windows.Forms.Button buttonUpdateExe;
+        private System.Windows.Forms.Button ButtonUpdateExe;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ProgressBar progressBarDownload;
-        private System.Windows.Forms.Button buttonDownload;
+        private System.Windows.Forms.Button ButtonDownload;
         private System.Windows.Forms.ListView listViewPlayList;
         private System.Windows.Forms.ColumnHeader columnHeaderSelect;
         private System.Windows.Forms.ColumnHeader columnHeaderTitle;
@@ -297,7 +297,7 @@
         private System.Windows.Forms.ColumnHeader columnHeaderUrl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBoxThumbNail;
-        private System.Windows.Forms.Button buttonRemoveSelected;
+        private System.Windows.Forms.Button ButtonRemoveSelected;
     }
 }
 

@@ -41,7 +41,7 @@ namespace Dottube
         /// </summary>
         /// <param name="sender">sender object</param>
         /// <param name="e">Event object</param>
-        private void buttonGetInfo_Click(object sender, System.EventArgs e)
+        private void ButtonGetInfo_Click(object sender, System.EventArgs e)
         {
             if (textBox1.Text != null)
             {
@@ -67,7 +67,7 @@ namespace Dottube
         /// </summary>
         /// <param name="sender">sender object</param>
         /// <param name="e">Event object</param>
-        private void buttonUpdateExe_Click(object sender, EventArgs e)
+        private void ButtonUpdateExe_Click(object sender, EventArgs e)
         {
             Wrapper.UpdateExe();
         }
@@ -77,11 +77,11 @@ namespace Dottube
         /// </summary>
         /// <param name="sender">sender object</param>
         /// <param name="e">events object</param>
-        private void buttonDownload_Click(object sender, EventArgs e)
+        private void ButtonDownload_Click(object sender, EventArgs e)
         {
             if (listViewPlayList.CheckedItems.Count > 0)
             {
-                buttonDownload.Enabled = false;
+                ButtonDownload.Enabled = false;
                 progressBarDownload.Visible = true;
                 var urls = new List<string>();
                 foreach (ListViewItem item in listViewPlayList.CheckedItems)
@@ -100,7 +100,7 @@ namespace Dottube
                 task =>
                 {
                     MessageBox.Show("Finished!");
-                    buttonDownload.Enabled = true;
+                    ButtonDownload.Enabled = true;
                     progressBarDownload.Visible = false;
                 }, 
                 TaskScheduler.FromCurrentSynchronizationContext()); 
@@ -112,7 +112,7 @@ namespace Dottube
         /// </summary>
         /// <param name="sender">sender object</param>
         /// <param name="e">Event object</param>
-        private void buttonRemoveSelected_Click(object sender, EventArgs e)
+        private void ButtonRemoveSelected_Click(object sender, EventArgs e)
         {
             if (listViewPlayList.CheckedItems.Count > 0)
             {
