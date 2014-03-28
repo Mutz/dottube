@@ -18,7 +18,14 @@ namespace Dottube
     /// </summary>
     public partial class MainForm : Form
     {
-        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        /// <summary>
+        /// log4net Log
+        /// </summary>
+        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        
+        /// <summary>
+        /// Initialise Playlist
+        /// </summary>
         protected PlayList liste = new PlayList();
 
         public MainForm()
